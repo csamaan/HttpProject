@@ -4,12 +4,12 @@ import java.net.URI;
 
 public class URIBasics {
     public static void main(String[] args) {
-
+        URI timsSite= URI.create("https://learnprogramming.academy/");
+        print(timsSite);
     }
 
     private static void print(URI uri) {
         System.out.printf("""
-                
                 --------------------------------------------
                 [scheme:]scheme-specific-part[#fragment]
                 --------------------------------------------
@@ -29,6 +29,7 @@ public class URIBasics {
                 uri.getUserInfo(),
                 uri.getHost(),
                 uri.getPort(),
+                uri.getPath(),
                 uri.getQuery(),
                 uri.getFragment());
     }
