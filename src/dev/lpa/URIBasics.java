@@ -1,11 +1,20 @@
 package dev.lpa;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 
 public class URIBasics {
     public static void main(String[] args) {
-        URI timsSite= URI.create("https://learnprogramming.academy/");
+        URI timsSite= URI.create(
+                "https://learnprogramming.academy/courses/complete-java-masterclass");
         print(timsSite);
+        try{
+            URI uri = new URI(
+                    "http://user:pw@store.com:5000/products/phones?os=android#samsung");
+            print(uri);
+        } catch(URISyntaxException e){
+            throw new  RuntimeException(e);
+        }
     }
 
     private static void print(URI uri) {
