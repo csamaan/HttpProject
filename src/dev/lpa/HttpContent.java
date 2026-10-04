@@ -38,6 +38,9 @@ public class HttpContent {
 
             int responseCode = connection.getResponseCode();
             System.out.printf("Response code: %d%n", responseCode);
+
+            System.out.println("----------------NEW SECTION----------------");
+
             if (responseCode != HttpURLConnection.HTTP_OK) {
                 System.err.println("Error reading webpage: " +url);
                 return;
