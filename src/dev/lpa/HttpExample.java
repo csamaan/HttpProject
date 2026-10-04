@@ -10,7 +10,6 @@ public class HttpExample {
 
     public static void main(String[] args) {
         try {
-            // Target the localhost server created in SimpleHttpServer
             URL url = new URL("http://localhost:8080/");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
