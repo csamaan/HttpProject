@@ -35,7 +35,6 @@ public class HttpExamplePost {
             System.out.println("Response code: " + responseCode);
 
 
-
             if (responseCode != HttpURLConnection.HTTP_OK) {
                 System.out.println("Error reading web page: " + connection.getResponseMessage());
                 return;
