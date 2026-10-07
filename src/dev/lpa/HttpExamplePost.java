@@ -14,11 +14,11 @@ public class HttpExamplePost {
             URL url = new URL("http://localhost:8080/");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
-            // Set the HTTP request method
+
+
             connection.setRequestMethod("POST");
             connection.setRequestProperty("User-Agent", "Chrome");
             connection.setRequestProperty("Accept", "application/json, text/html");
-
             connection.setReadTimeout(30000); // 30-second timeout
             connection.setDoOutput(true);
             connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
